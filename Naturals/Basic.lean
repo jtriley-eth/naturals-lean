@@ -98,11 +98,6 @@ inductive Natural : Type
 
 open Natural
 
-def Natural.sub : Natural → Natural → Natural
-  | zero, _ => zero
-  | n, zero => n
-  | successor n, successor m => Natural.sub n m
-
 /-
 ### Addition Function
 
